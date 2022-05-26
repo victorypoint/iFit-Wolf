@@ -18,7 +18,7 @@ For example, the log file 2022-05-24_logs.txt can contain real-time speed and in
 - [7] 1759006 14:01:59.0763 [Trace:FitnessConsole] Kph changed from 2 to 2.1
 - [10] 1783494 14:02:23.5646 [Trace:FitPro] Changed Grade to: 0.5
 - [12] 1783763 14:02:23.8342 [Trace:FitnessConsole] Grade changed from 0 to 0.5
--
+
 The NT C2950 treadmills embedded iFit console runs Android (currently v9 on my model). The workout logs are located in: 
 \sdcard\.wolflogs\. An example of the full workout log path for a given day is as follows:
 
