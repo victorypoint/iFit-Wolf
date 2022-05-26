@@ -1,11 +1,11 @@
 # iFit-Wolf
-Experimental iFit Workout Data Capture
+## Experimental iFit Workout Data Capture
 
-iFit-Wolf – Experimental iFit Workout Data Capture - NordicTrack Commercial 2950 iFit Embedded Wifi Treadmill (2021 model)
+### For NordicTrack Commercial 2950 iFit Embedded Wifi Treadmill (2021 model)
 
-Note: The NordicTrack C2950 iFit Embedded Wifi Treadmill is not a “smart treadmill” in the sense that it does not have iFit Bluetooth-enabled technology. That is, it does not transmit speed and inclination data via Bluetooth to applications such as Zwift. Nor does it use WebSockets to communicate over Wifi as older NordicTrack treadmills have.
+**NOTE**: The NordicTrack C2950 iFit Embedded Wifi Treadmill is not a "smart treadmill" in the sense that it does not have iFit Bluetooth-enabled technology. That is, it does not transmit speed and inclination data via Bluetooth to applications such as Zwift. Nor does it use WebSockets to communicate over Wifi as older NordicTrack treadmills have.
 
-The NT C2950 treadmill, and perhaps other NT iFit-embredded treadmills (I’ve only tested the C2950 model), record individual workouts to a local text log in a sequential streaming format. Workout data is recorded to a single log file for each day and is easily identified by the filename – e.g. 2022-05-24_logs.txt. Each days log file contains data for all workouts for that given day. The file naming scheme is therefore: YYYY-MM-DD_logs.txt. Each logged workout event is identified in a single or multiple lines by a unique ID and timestamp derived from the time/date settings within the users iFit configuration. Workout events, including changes to speed and inclination, are recorded in real-time to the log file and can be parsed to isolate current speed and inclination for use in applications such as Zwift.
+The NT C2950 treadmill, and perhaps other NT iFit-embredded treadmills (I've only tested the C2950 model), record individual workouts to a local text log in a sequential streaming format. Workout data is recorded to a single log file for each day and is easily identified by the filename – e.g. 2022-05-24_logs.txt. Each days log file contains data for all workouts for that given day. The file naming scheme is therefore: YYYY-MM-DD_logs.txt. Each logged workout event is identified in a single or multiple lines by a unique ID and timestamp derived from the time/date settings within the users iFit configuration. Workout events, including changes to speed and inclination, are recorded in real-time to the log file and can be parsed to isolate current speed and inclination for use in applications such as Zwift.
 For example, the log file 2022-05-24_logs.txt can contain real-time speed and inclination events which can be identified as follows:
 
 - [11] 1758734 14:01:58.8047 [Trace:FitPro] Changed KPH to: 2.1
@@ -21,7 +21,7 @@ Workout events are recorded sequentially as they occur - top to bottom. To obtai
 
 I've written a Windows VBscript which accesses the latest workout log and displays the real-time speed and inclination values in a MS Edge browser window. The log is accessed via an ADB connection to the treadmill. The VBscript assumes an ADB connection has already been established with the treadmill, and proceeds to copy the log, parse the current speed and inclination values, and display and refresh the real-time values in Edge. My testing environment is a Surface Book 2 running Windows 11 Pro.
 
-I’ve not including documentation here on how to configure the NT C2950 treadmill for ADB communication, but it involves accessing the machines “Privileged Mode”, turning on “Developer Options” in Android settings, and enabling “USB Debugging” mode. Accessing Privileged Mode is well documented on many websites, dependent on the treadmill model, and version of Android and iFit.
+I’ve not included documentation here on how to configure the NT C2950 treadmill for ADB communication, but it involves accessing the machines “Privileged Mode”, turning on “Developer Options” in Android settings, and enabling “USB Debugging” mode. Accessing Privileged Mode is well documented on many websites, dependent on the treadmill model, and version of Android and iFit.
 
 Files included:
 - adb-connect.bat (commands to initiate an ADB connection with the treadmill – change the IP to that of the treadmill)
