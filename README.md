@@ -1,7 +1,7 @@
 # iFit-Wolf
 Experimental iFit Workout Data Capture
 
-iFit-Wolf – Experimental iFit Workout Data Capture - NordicTrack C2950 iFit Embedded Wifi Treadmill (2021 model)
+iFit-Wolf – Experimental iFit Workout Data Capture - NordicTrack Commercial 2950 iFit Embedded Wifi Treadmill (2021 model)
 
 Note: The NordicTrack C2950 iFit Embedded Wifi Treadmill is not a “smart treadmill” in the sense that it does not have iFit Bluetooth-enabled technology. That is, it does not transmit speed and inclination data via Bluetooth to applications such as Zwift. Nor does it use WebSockets to communicate over Wifi as older NordicTrack treadmills have.
 
