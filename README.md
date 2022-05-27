@@ -32,3 +32,5 @@ Files included:
 ADB stands for Android Debug Bridge used by developers to connect their development computer with an Android device via a USB cable (and over Wifi in this case). If you don't have Android SDK installed on your PC, ADB may not be recognized. It's recommended you download the latest version.
 
 Obviously, this Windows ADB solution is not ideal and real-time feedback is a bit slow. With this documentation and code, it is hoped that it can be used as a basis to write faster processes to access the treadmills local workout logs and parse the speed and inclination values for transmit to Zwift and other applications.
+
+iFit-Wolf video demonstration - https://www.youtube.com/watch?v=2rzn6CJ70vM
